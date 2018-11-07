@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</head>
+<body ng-app = "carsApp">
+  <div ng-controller = "carsController">
+    <ul>
+      <li ng-repeat = "car in arrayCars" ng-if="car.couleur == 'verte'">{{car.marque +" , "+ car.couleur}}</li>
+    </ul>
+  </div>
+  <script src="assets/js/exercice3.js"></script>
+</body>
+</html>
